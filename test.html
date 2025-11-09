@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Crazy | Snow Wars</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Noto Sans KR', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid rgba(255, 0, 60, 0.3);
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      color: #ff003c;
+      text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff003c;
+      text-shadow: 0 0 10px #ff003c;
+    }
+
+    .hero {
+      height: 100vh;
+      background: radial-gradient(circle at center, rgba(255,0,60,0.2), #0a0a0a 80%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: #ff003c;
+      text-shadow: 0 0 20px #ff003c, 0 0 40px #ff003c;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 15px 40px;
+      border: 2px solid #ff003c;
+      color: #ff003c;
+      background: transparent;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff003c;
+      color: #0a0a0a;
+      box-shadow: 0 0 20px #ff003c, 0 0 40px #ff003c;
+    }
+
+    section {
+      padding: 100px 60px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #ff003c;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #ff003c;
+    }
+
+    .about, .contact {
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 0, 60, 0.3);
+      text-align: center;
+      padding: 30px 0;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .neon-glow {
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff003c; }
+      to { text-shadow: 0 0 25px #ff003c, 0 0 50px #ff003c; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo neon-glow">TEAM CRAZY</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#game">Game</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="neon-glow">SNOW WARS</h1>
+    <p>눈보라 속 전쟁의 스릴! 팀 크레이지의 신작, 「스노우 워즈」는 전략과 반응속도의 한계를 시험하는 하이퍼 액션 배틀 게임입니다.</p>
+    <button class="btn">Coming Soon</button>
+  </section>
+
+  <section id="about">
+    <h2>About Team Crazy</h2>
+    <p class="about">
+      저희 팀 크레이지는 **열정과 도전정신**으로 뭉친 인디 게임 개발팀입니다.
+    </p>
+  </section>
+
+  <section id="game">
+    <h2>The Game: Snow Wars</h2>
+    <p class="about">
+      ❄️ **장르:** 액션 / 배틀 아레나  
+      ⚔️ **플랫폼:** PC (Steam 예정)  
+      🚀 **출시 예정일:** 2025년 하반기  
+      🌌 **특징:** 네온빛 전장, 다채로운 스킬, 빠른 템포의 전투  
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p class="contact">
+      📧 teamcrazy.games@gmail.com  
+      🌐 Instagram / X: @teamcrazy_games  
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Team Crazy. All rights reserved.
+  </footer>
+</body>
+</html>
